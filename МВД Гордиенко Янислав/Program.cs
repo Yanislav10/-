@@ -49,7 +49,8 @@ void Nazvania()
 
 }
 
-while (true)
+
+void condition()
 {
     Console.WriteLine("Ввидите свой баланс:");
     int amountOfMoney = Int32.Parse(Console.ReadLine());
@@ -70,4 +71,52 @@ while (true)
     {
         Console.WriteLine("Денег нет");
     }
+}
+
+
+
+    int i = 0;
+while (i < 5)
+{
+    Console.WriteLine(i);
+    i++;
+}
+i = 0;
+do
+{
+    i++;
+    Console.WriteLine(i);
+}
+while (i < 0);
+for (i = 0; i < 52; i++)
+{
+  Console.WriteLine(i);
+}
+
+int mnojitel = 5;
+for (i = 0; i < 11; i++);
+{
+
+Console.WriteLine(mnojitel + "*" + i + " = " + i * mnojitel);
+}
+
+int[] numbers;
+int[] numbers_1 = new int[10];
+int[] numbers_2 = new int[5] { 1, 5, -23, -4, 52};
+int[] numbers_3 = { 1, 24, 3, -8 };
+//оприделение масива
+
+int[,] matrix = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+Console.WriteLine(matrix);
+foreach (int a in numbers_2)
+{
+    Console.WriteLine(a);
+}
+
+for (int b = 0; b < numbers_2.Length; b++)
+{
+    Console.WriteLine(b);
+    Console.WriteLine(numbers_2[b]);
+
+    Console.WriteLine("В ячейке под номером" + b + "хранится значение" + numbers_2[b]);
 }
